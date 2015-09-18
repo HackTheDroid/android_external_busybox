@@ -19,10 +19,10 @@ int get_default_context(const char* user,
 /* Compute a relabeling decision and set *newcon to refer to it.
    Caller must free via freecon.
    Stub not implemented in bionic, but declared in selinux.h */
-int security_compute_relabel(const char *scon UNUSED_PARAM,
-	const char *tcon,
+int security_compute_relabel(const security_context_t scon UNUSED_PARAM,
+	const security_context_t tcon,
 	security_class_t tclass UNUSED_PARAM,
-	char ** newcon)
+	security_context_t * newcon)
 {
 	if (tcon)
 		*newcon = strdup(tcon);
