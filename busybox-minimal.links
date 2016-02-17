@@ -42,6 +42,7 @@
 /bin/expand
 /bin/expr
 /bin/false
+/sbin/fbset
 /sbin/fdisk
 /bin/fgrep
 /bin/find
